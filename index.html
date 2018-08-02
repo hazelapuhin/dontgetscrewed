@@ -1,49 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>mod07-11 BMI calc</title>
-	<link rel="stylesheet" href="assets/css/style.css" />
-
+	<title>Game App using jQuery</title>
 	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-
 <body>
-	<div>
-		<h1>BMI Calculator</h1>
-		<div class="form-group">
-			<label for="mass">Mass:</label>			
-			<input type="number" class="form-control" id="mass">
 
-			<select class="form-control" id="slectHeight">
-			<option>kilogram</option>
-			<option>pounds</option>
-		</select>
+	<h1>Fairy Training</h1>
+	<div id="container">
+		<div id="fairy"></div>
+		<div id="obstacle1" class="obstacle"></div>
+		<div id="obstacle2" class="obstacle"></div>
 
-		</div>
-		<div class="form-group" >
-			<label for="height">Height:</label>			
-			<input type="number" class="form-control" id="height">
 
-			<select class="form-control" id="slectHeight">
-			<option>meters</option>
-			<option>inches</option>
-		</select>
-
-		</div>
-
-		
-		<button class="btn btn-success">Calculate BMI</button>
 	</div>
 
-	
+	<div id="scoreboard">
+		<p>Score: <span id="score">0</span></p>
+		<p>Speed: <span id="speed">10</span></p>
+		
+		<div id="rules">
+		<h2>Game-over Rules</h2>
+		<p>If Fairy touches the top and bottom of the screen</p>
+		<p>If the fairy touches the obstacles with poison</p>
+		</div>
+	</div>
 
-
-<script type="text/javascript" src="assets/js/script.js"></script>
-
-
-
+	<button id="restart">Try Again</button>
+	<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
