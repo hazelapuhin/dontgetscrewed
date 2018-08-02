@@ -1,17 +1,23 @@
 body{
-	height: 95vh;
+	height: 90vh;
 	width: 100%;
 	margin: 0;
+	background-color: black;
+	color: white;
+
 }
 
 #container {
 	position: relative;
-	height: 50vh;
+	height: 78vh;
 	width: 90%;
 	border: 2px solid grey;
 	background-color: aliceblue;
-	margin-left: 4%;
+	margin: auto;
+	margin-top: 2%;
 	overflow: hidden;
+	background: url(../images/bg.gif);
+	background-size: contain;
 }
 
 #fairy {
@@ -35,23 +41,27 @@ h1 {
 .obstacle {
 	position: absolute;
 	height: 150px;
-	width: 150px;
-	background-color: black;
-	border-radius: 50%;
+	width: 30px;
+	background: url(../images/fire.gif);
+	background-size: cover;
+	/*border-radius: 50%;*/
 	right: -100px;
+	overflow: hidden;
 }
 
 #obstacle1 {
 	top: 0;
-	transform-translate: -50px -50px;
+	border-radius: 0 0 10% 10%;
+	/*transform-translate: -50px -50px;*/
 }
 
 #obstacle2 {
 	bottom: 0;
+	border-radius: 10% 10% 0 0;
 }
 
 #scoreboard {
-	position: relative;
+	/*position: relative;*/
 	text-align: center;
 	font-size: 40px;
 }
@@ -59,14 +69,24 @@ h1 {
 #restart {
 	position: absolute;
 	top: 0;
-	width: 100%;
+	width: 98%;
 	padding: 20px;
-	background-color: red;
-	color: yellow;
+	background-color: black;
+	/*opacity: 0.8;*/
+	color: white;
 	font-size: 35px;
 	cursor: pointer;
 	display: none;
+	box-shadow: 5px 10px green;
+	
 }
+
+.hazel {
+	font-size: 2em;
+	color: yellow;
+	margin-left: 80px;
+}
+
 
 p {
 	font-size: .5em;
